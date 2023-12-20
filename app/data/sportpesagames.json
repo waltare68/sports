@@ -1,0 +1,977 @@
+[
+    {
+        "id": 4926809,
+        "betgeniusId": 9750957,
+        "betradarId": 36603341,
+        "smsId": 2761,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10000238,
+            "name": "European Championship Qualification"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 84249,
+                "name": "Hungary"
+            },
+            {
+                "id": 1012,
+                "name": "Montenegro"
+            }
+        ],
+        "dateTimestamp": 1700402400000,
+        "date": "2023-11-19T14:00:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2514782653,
+                        "name": "Hungary",
+                        "odds": "1.77",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514782665,
+                        "name": "Draw",
+                        "odds": "3.46",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514782663,
+                        "name": "Montenegro",
+                        "odds": "4.41",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4931497,
+        "betgeniusId": 9750965,
+        "betradarId": 36603343,
+        "smsId": 4774,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10000238,
+            "name": "European Championship Qualification"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 988,
+                "name": "Serbia"
+            },
+            {
+                "id": 50782,
+                "name": "Bulgaria"
+            }
+        ],
+        "dateTimestamp": 1700402400000,
+        "date": "2023-11-19T14:00:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2515063113,
+                        "name": "Serbia",
+                        "odds": "1.21",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2515063123,
+                        "name": "Draw",
+                        "odds": "5.81",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2515063121,
+                        "name": "Bulgaria",
+                        "odds": "12.02",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4930597,
+        "betgeniusId": 10528318,
+        "betradarId": 45042718,
+        "smsId": 2775,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10030544,
+            "name": "World Cup Qualification, CAF"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 961,
+                "name": "Sudan"
+            },
+            {
+                "id": 980,
+                "name": "DR Congo"
+            }
+        ],
+        "dateTimestamp": 1700409600000,
+        "date": "2023-11-19T16:00:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2515008809,
+                        "name": "Sudan",
+                        "odds": "5.74",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2515008833,
+                        "name": "Draw",
+                        "odds": "3.61",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2515008835,
+                        "name": "DR Congo",
+                        "odds": "1.56",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4933323,
+        "betgeniusId": 10528285,
+        "betradarId": 45042094,
+        "smsId": 4495,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10030544,
+            "name": "World Cup Qualification, CAF"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 953,
+                "name": "Sierra Leone"
+            },
+            {
+                "id": 974,
+                "name": "Egypt"
+            }
+        ],
+        "dateTimestamp": 1700409600000,
+        "date": "2023-11-19T16:00:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2515208301,
+                        "name": "Sierra Leone",
+                        "odds": "15.87",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2515208319,
+                        "name": "Draw",
+                        "odds": "5.16",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2515208329,
+                        "name": "Egypt",
+                        "odds": "1.20",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4924567,
+        "betgeniusId": 9750937,
+        "betradarId": 36603085,
+        "smsId": 4662,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10000238,
+            "name": "European Championship Qualification"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 987,
+                "name": "Belgium"
+            },
+            {
+                "id": 1004,
+                "name": "Azerbaijan"
+            }
+        ],
+        "dateTimestamp": 1700413200000,
+        "date": "2023-11-19T17:00:00.000Z",
+        "state": {},
+        "marketsCount": 14,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2514651955,
+                        "name": "Belgium",
+                        "odds": "1.07",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514651959,
+                        "name": "Draw",
+                        "odds": "9.03",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514651965,
+                        "name": "Azerbaijan",
+                        "odds": "26.10",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4926837,
+        "betgeniusId": 9750951,
+        "betradarId": 36603087,
+        "smsId": 3903,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10000238,
+            "name": "European Championship Qualification"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 992,
+                "name": "Sweden"
+            },
+            {
+                "id": 84251,
+                "name": "Estonia"
+            }
+        ],
+        "dateTimestamp": 1700413200000,
+        "date": "2023-11-19T17:00:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2514784781,
+                        "name": "Sweden",
+                        "odds": "1.20",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514784801,
+                        "name": "Draw",
+                        "odds": "5.80",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514784827,
+                        "name": "Estonia",
+                        "odds": "14.05",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4924163,
+        "betgeniusId": 9750837,
+        "betradarId": 36601333,
+        "smsId": 1539,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10000238,
+            "name": "European Championship Qualification"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 1058,
+                "name": "Spain"
+            },
+            {
+                "id": 84253,
+                "name": "Georgia"
+            }
+        ],
+        "dateTimestamp": 1700423100000,
+        "date": "2023-11-19T19:45:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2514619641,
+                        "name": "Spain",
+                        "odds": "1.06",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514619653,
+                        "name": "Draw",
+                        "odds": "9.63",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514619635,
+                        "name": "Georgia",
+                        "odds": "28.09",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4926757,
+        "betgeniusId": 9751049,
+        "betradarId": 36604943,
+        "smsId": 4533,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10000238,
+            "name": "European Championship Qualification"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 1006,
+                "name": "Portugal"
+            },
+            {
+                "id": 1002,
+                "name": "Iceland"
+            }
+        ],
+        "dateTimestamp": 1700423100000,
+        "date": "2023-11-19T19:45:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2514780929,
+                        "name": "Portugal",
+                        "odds": "1.15",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514780941,
+                        "name": "Draw",
+                        "odds": "6.89",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514780935,
+                        "name": "Iceland",
+                        "odds": "15.51",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4926759,
+        "betgeniusId": 9751051,
+        "betradarId": 36604947,
+        "smsId": 4559,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10000238,
+            "name": "European Championship Qualification"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 50780,
+                "name": "Liechtenstein"
+            },
+            {
+                "id": 1005,
+                "name": "Luxembourg"
+            }
+        ],
+        "dateTimestamp": 1700423100000,
+        "date": "2023-11-19T19:45:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2514781129,
+                        "name": "Liechtenstein",
+                        "odds": "12.96",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514781155,
+                        "name": "Draw",
+                        "odds": "5.98",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514781175,
+                        "name": "Luxembourg",
+                        "odds": "1.20",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4926811,
+        "betgeniusId": 9751050,
+        "betradarId": 36604945,
+        "smsId": 5326,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10000238,
+            "name": "European Championship Qualification"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 1011,
+                "name": "Bosnia and Herzegovina"
+            },
+            {
+                "id": 50781,
+                "name": "Slovakia"
+            }
+        ],
+        "dateTimestamp": 1700423100000,
+        "date": "2023-11-19T19:45:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2514782461,
+                        "name": "Bosnia and Herzegovina",
+                        "odds": "2.64",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514782529,
+                        "name": "Draw",
+                        "odds": "3.09",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514782533,
+                        "name": "Slovakia",
+                        "odds": "2.64",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4926835,
+        "betgeniusId": 9750841,
+        "betradarId": 36601335,
+        "smsId": 5695,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10000238,
+            "name": "European Championship Qualification"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 990,
+                "name": "Scotland"
+            },
+            {
+                "id": 50784,
+                "name": "Norway"
+            }
+        ],
+        "dateTimestamp": 1700423100000,
+        "date": "2023-11-19T19:45:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2514784401,
+                        "name": "Scotland",
+                        "odds": "2.20",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514784413,
+                        "name": "Draw",
+                        "odds": "3.10",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514784439,
+                        "name": "Norway",
+                        "odds": "3.30",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4934235,
+        "betgeniusId": 0,
+        "betradarId": 45042096,
+        "smsId": 5645,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10030544,
+            "name": "World Cup Qualification, CAF"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 105696,
+                "name": "Djibouti"
+            },
+            {
+                "id": 105694,
+                "name": "Guinea-Bissau"
+            }
+        ],
+        "dateTimestamp": 1700485200000,
+        "date": "2023-11-20T13:00:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2515273253,
+                        "name": "Djibouti",
+                        "odds": "12.37",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2515273269,
+                        "name": "Draw",
+                        "odds": "5.56",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2515273271,
+                        "name": "Guinea-Bissau",
+                        "odds": "1.21",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4930147,
+        "betgeniusId": 0,
+        "betradarId": 45043420,
+        "smsId": 4820,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10030544,
+            "name": "World Cup Qualification, CAF"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 957,
+                "name": "Gambia"
+            },
+            {
+                "id": 958,
+                "name": "Ivory Coast"
+            }
+        ],
+        "dateTimestamp": 1700496000000,
+        "date": "2023-11-20T16:00:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2514982239,
+                        "name": "Gambia",
+                        "odds": "5.94",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514982243,
+                        "name": "Draw",
+                        "odds": "3.69",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2514982251,
+                        "name": "Ivory Coast",
+                        "odds": "1.54",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4930407,
+        "betgeniusId": 0,
+        "betradarId": 45043598,
+        "smsId": 5794,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10030544,
+            "name": "World Cup Qualification, CAF"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 984,
+                "name": "Liberia"
+            },
+            {
+                "id": 952,
+                "name": "Equatorial Guinea"
+            }
+        ],
+        "dateTimestamp": 1700496000000,
+        "date": "2023-11-20T16:00:00.000Z",
+        "state": {},
+        "marketsCount": 22,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2515002133,
+                        "name": "Liberia",
+                        "odds": "3.29",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2515002147,
+                        "name": "Draw",
+                        "odds": "3.03",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2515002145,
+                        "name": "Equatorial Guinea",
+                        "odds": "2.19",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4908909,
+        "betgeniusId": 0,
+        "betradarId": 45124998,
+        "smsId": 3896,
+        "hasCustomBet": 0,
+        "competition": {
+            "id": 10002462,
+            "name": "International Friendly Games"
+        },
+        "country": {
+            "id": 89,
+            "name": "International",
+            "iso": "int"
+        },
+        "sport": {
+            "id": 1,
+            "name": "Football"
+        },
+        "competitors": [
+            {
+                "id": 1007,
+                "name": "Russia"
+            },
+            {
+                "id": 99422,
+                "name": "Cuba"
+            }
+        ],
+        "dateTimestamp": 1700497800000,
+        "date": "2023-11-20T16:30:00.000Z",
+        "state": {},
+        "marketsCount": 20,
+        "markets": [
+            {
+                "id": 10,
+                "name": "3 Way",
+                "columns": 3,
+                "columnsApp": 3,
+                "selections": [
+                    {
+                        "id": 2513478929,
+                        "name": "Russia",
+                        "odds": "1.09",
+                        "shortName": "1",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2513478933,
+                        "name": "Draw",
+                        "odds": "7.84",
+                        "shortName": "X",
+                        "specValue": 0
+                    },
+                    {
+                        "id": 2513478931,
+                        "name": "Cuba",
+                        "odds": "20.64",
+                        "shortName": "2",
+                        "specValue": 0
+                    }
+                ]
+            }
+        ]
+    }
+]

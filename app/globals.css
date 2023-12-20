@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.virtuals-ongoing {
+  background-color: var(--lightest-blue);
+  padding: 20px;
+}
+.virtuals__ongoing__virtuals-header-one {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.virtuals__ongoing__virtuals-header-two {
+  display: flex;
+  align-items: center;
+  padding-bottom: 13px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.virtuals__ongoing__virtuals-match {
+  font-weight: var(--font-weight-lighter);
+  font-size: var(--font-small);
+  margin: 0px;
+  color: var(--light-black);
+}
+.virtuals__ongoing__virtuals-season {
+  font-size: var(--font-large);
+  color: #ea7575;
+  margin: 0px;
+  font-weight: var(--font-weight-medium);
+}
+.virtuals__ongoing__virtuals-status {
+  font-size: var(--font-normal);
+  color: #ea7575;
+  margin: 0px;
+  font-weight: var(--font-weight-medium);
+}.virtuals__ongoing__virtuals-match-time {
+  font-size: var(--font-normal);
+  color: rgb(185, 34, 34);
+  margin: 0px;
+  font-weight: var(--font-weight-lighter);
+}
+
+.virtuals__ongoing__virtuals-card {
+  margin-bottom: 10px;
+  background: #9c8989;
+  border-radius: 4px;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-small);
+  padding: 5px 25px 5px 5px;
+  flex-direction: row;
+}
+.virtuals__ongoing__ft-score {
+  padding: 10px 10px;
+  display: flex;
+  flex-basis: 10px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.virtuals__ongoing__teams {
+  padding: 10px 6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  font-weight: var(--font-weight-light);
+  flex: 5;
+}
+.virtuals__ongoing__ht {
+  flex-basis: 36px;
+}
+.virtuals__ongoing__ht-label {
+  padding: 11px 5px;
+  background-color: var(--lightest-blue);
+  border-radius: 2px;
+  height: 8px;
+  font-size: var(--font-smallest);
+}
+.virtuals__ongoing__ht-score {
+  padding: 10px 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.virtuals__ongoing__empty {
+  color: var(--light-dark-blue);
+  font-size: var(--font-medium);
+  text-align: center;
+}
+.empty__message {
+  margin-top: 5px;
+  text-align: center;
+  font-size: var(--font-small);
+}
+
+.virtuals__ongoing__yellow-card-label {
+  padding: 4px 5px;
+  margin: 2px;
+  border-radius: 2px;
+  height: 10px;
+  background-color: #ffff00;
+  font-size: var(--font-smallest);
+  color: #000000;
+}
+/* loading spinners */
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  width: 10px;
+  height: 7px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #383636; /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+svg.svg-inline--fa.fa-table-tennis-paddle-ball {
+  color: #f03609;
+  font-size: 16px;
+  background: -webkit-linear-gradient(90deg,#d73c17 -20.51%,#ffa83c 135.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+svg.svg-inline--fa.fa-gift {
+  color: #f03609;
+  font-size: 16px;
+  background: -webkit-linear-gradient(90deg,#d73c17 -20.51%,#ffa83c 135.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+svg.svg-inline--fa.fa-ticket-simple {
+  color: #f03609;
+  font-size: 16px;
+  background: -webkit-linear-gradient(90deg,#d73c17 -20.51%,#ffa83c 135.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+svg.svg-inline--fa.fa-circle-user {
+  color: #f03609;
+  font-size: 16px;
+  background: -webkit-linear-gradient(90deg,#d73c17 -20.51%,#ffa83c 135.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

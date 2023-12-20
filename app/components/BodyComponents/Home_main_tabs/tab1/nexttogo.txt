@@ -1,0 +1,1072 @@
+<div className="live__heightlight mb__30">
+                        <div className="section__title">
+                            <h4>Next To Go</h4>
+                        </div>
+                        <div className="heightlight__tab nexttogo__tab">
+                            <div className="nav pt-20" id="nav-tabheightnextgo"
+                                role="tablist"><button className="nav-link active"
+                                    id="lightnext" data-bs-toggle="tab"
+                                    data-bs-target="#height1next" type="button"
+                                    role="tab" aria-selected="true"><span
+                                        className="icons"><i
+                                            className="icon-football"></i></span><span>All</span></button><button
+                                                className="nav-link " id="lightall" data-bs-toggle="tab"
+                                                data-bs-target="#nextfootball" type="button"
+                                                role="tab" aria-selected="false"><span
+                                                    className="icons"><i
+                                                        className="icon-football"></i></span><span>Football</span></button><button
+                                                            className="nav-link " id="lightnext2"
+                                                            data-bs-toggle="tab"
+                                                            data-bs-target="#nextgotennistab" type="button"
+                                                            role="tab" aria-selected="false"><span
+                                                                className="icons"><i
+                                                                    className="icon-tennis"></i></span><span>Tennis</span></button><button
+                                                                        className="nav-link " id="lightlighttab3next"
+                                                                        data-bs-toggle="tab" data-bs-target="#nextbaskettab"
+                                                                        type="button" role="tab" aria-selected="false"><span
+                                                                            className="icons"><i
+                                                                                className="icon-basketball"></i></span><span>Basketball</span></button><button
+                                                                                    className="nav-link " id="lightlighttab4next"
+                                                                                    data-bs-toggle="tab"
+                                                                                    data-bs-target="#nexticehockytab" type="button"
+                                                                                    role="tab" aria-selected="false"><span
+                                                                                        className="icons"><i
+                                                                                            className="icon-icehockey"></i></span><span>Ice
+                                                                                                Hockey</span></button><button className="nav-link "
+                                                                                                    id="lightlighttab5next" data-bs-toggle="tab"
+                                                                                                    data-bs-target="#afootballtab" type="button"
+                                                                                                    role="tab" aria-selected="false"><span
+                                                                                                        className="icons"><i
+                                                                                                            className="icon-afootball"></i></span><span>American
+                                                                                                                Football</span></button></div>
+                        </div>
+                        <div className="height__table">
+                            <div className="tab-content" id="nav-tabContentheightnext">
+                                <div className="tab-pane fade text-white show active"
+                                    id="height1next" role="tabpanel"
+                                    aria-labelledby="nav-home-tabpre" >
+                                    <div className="main__table">
+                                        <div className="table__wrap">
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-tennis"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Maximilian Neuchrist AUT
+                                                            </h6><span
+                                                                className="text">Timofey
+                                                                Skatov KAZ</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>2.95</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>1.35</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Starting
+                                                            in 42 min</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-tennis"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Nuno Borges POR</h6>
+                                                            <span className="text">Pedro
+                                                                Sousa POR</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>2.00</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>1.72</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Starting
+                                                            in 20 min</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-tennis"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Cristina Bucsa ESP</h6>
+                                                            <span className="text">Kateryna
+                                                                Baindl UKR</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>2.00</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>1.20</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span
+                                                            className="text-base">
+                                                            Starting in 60
+                                                            min</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right text-base"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-tennis"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Canada</h6><span
+                                                                className="text">Morocco</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>5.23</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>4.53</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span
+                                                            className="text-base">
+                                                            Starting in 40
+                                                            min</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right text-base"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-tennis"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Croatia</h6><span
+                                                                className="text">Belgium</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>4.23</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>3.53</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            21:00</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-tennis"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Canada</h6><span
+                                                                className="text">Belgium</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>2.22</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>3.53</span></a><a
+                                                                        className="point__box"
+                                                                        href="URL:void(0)"><span
+                                                                            className="point__1">2</span><span>3.53</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span
+                                                            className="text-base"> Today
+                                                            / 21:00</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right text-base"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-tennis"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Canada</h6><span
+                                                                className="text">Belgium</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__boxbet"
+                                                        href="URL:void(0)"><span>Bet
+                                                            now</span></a></div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span
+                                                            className="text-base"> Today
+                                                            / 21:00</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right text-base"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                className="table__footer table__footer__nextgo">
+                                                <a className="lobby" href="#show"><span>Show
+                                                    more</span><span
+                                                        className="icons"><i
+                                                            className="fa-solid fa-chevron-down"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="tab-pane fade text-white " id="nextfootball"
+                                    role="tabpanel" >
+                                    <div className="main__table main__table__nextfootball">
+                                        <div className="table__wrap">
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-football"></i>
+                                                        </div>
+                                                        <div className="content"><span
+                                                            className="text">Sunderland</span>
+                                                            <h6>Millwall</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>2.25</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">x</span><span>3.00</span></a><a
+                                                                        className="point__box"
+                                                                        href="URL:void(0)"><span
+                                                                            className="point__1">2</span><span>2.53</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            21:00</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-football"></i>
+                                                        </div>
+                                                        <div className="content"><span
+                                                            className="text">World Cup
+                                                            2022 - Winner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__boxbet"
+                                                        href="URL:void(0)"><span>Bet
+                                                            now</span></a></div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            21:00</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-football"></i>
+                                                        </div>
+                                                        <div className="content"><span
+                                                            className="text">World Cup
+                                                            2022 - Top
+                                                            Goalscorer</span></div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__boxbet"
+                                                        href="URL:void(0)"><span>Bet
+                                                            now</span></a></div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            21:00</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-football"></i>
+                                                        </div>
+                                                        <div className="content"><span
+                                                            className="text">Netherlands</span>
+                                                            <h6>Millwall</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>6.22</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">X</span><span>4.53</span></a><a
+                                                                        className="point__box"
+                                                                        href="URL:void(0)"><span
+                                                                            className="point__1">2</span><span>3.53</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            21:00</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-football"></i>
+                                                        </div>
+                                                        <div className="content"><span
+                                                            className="text">Canada</span>
+                                                            <h6>Belgium</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>5.22</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">X</span><span>4.53</span></a><a
+                                                                        className="point__box"
+                                                                        href="URL:void(0)"><span
+                                                                            className="point__1">2</span><span>3.53</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            21:00</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-football"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Luca Van Assche
+                                                                <span>FRA</span></h6>
+                                                            <h6>Aleksandar Vukic
+                                                                <span>AUS</span></h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>3.20</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>2.40</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span
+                                                            className="text-base">
+                                                            Starting now</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right text-base"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                className="table__footer table__footer__nextgo">
+                                                <a className="lobby" href="#show"><span>Show
+                                                    more</span><span
+                                                        className="icons"><i
+                                                            className="fas fa-chevron-down"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="tab-pane fade text-white "
+                                    id="nextgotennistab" role="tabpanel" >
+                                    <div className="main__table main__table__nextfootball">
+                                        <div className="table__wrap">
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-tennis"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Dusan Lajovic
+                                                                <span>SRB</span></h6>
+                                                            <h6>Steven Diez
+                                                                <span>FRA</span></h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>2.25</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>2.82</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            16:15</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-tennis"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Maximilian Neuchrist
+                                                                <span>AUT</span></h6>
+                                                            <h6>Luca Van Assche
+                                                                <span>FRA</span></h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>3.22</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>4.33</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            26:15</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-tennis"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Rebecca Peterson
+                                                                <span>SWE</span></h6>
+                                                            <h6>Alycia Parks
+                                                                <span>USA</span></h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>1.25</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>2.55</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            19:15</span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="tab-pane fade text-white "
+                                    id="nextbaskettab" role="tabpanel" >
+                                    <div className="main__table main__table__nextfootball">
+                                        <div className="table__wrap">
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Club Basquet Girona 2014
+                                                            </h6>
+                                                            <h6>C.B. Breogan</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">-3,5</span><span>1.25</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">+3,5</span><span>1.82</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            17:30 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>CB 1939 Canarias</h6>
+                                                            <h6>Baloncesto Fuenlabrada
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">-3,5</span><span>3.22</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">+3,5</span><span>4.33</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            10:30 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Aris</h6>
+                                                            <h6>GS Lavriou</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">-12,5</span><span>1.83</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">+12,5</span><span>1.95</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            11:30 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Baskonia Vitoria</h6>
+                                                            <h6>UCAM Murcia</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">-10,5</span><span>1.90</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">+10,5</span><span>1.87</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            17:30 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Real Madrid</h6>
+                                                            <h6>Valencia Basket</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">-10,5</span><span>1.90</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">+10,5</span><span>1.87</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            26:15 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>AS Karditsas</h6>
+                                                            <h6>PAOK Salonika</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">-8,5</span><span>1.87</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">+8,5</span><span>1.87</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            15:30 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                className="table__footer table__footer__nextgo">
+                                                <a className="lobby" href="#show"><span>Show
+                                                    more</span><span
+                                                        className="icons"><i
+                                                            className="fas fa-chevron-down"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="tab-pane fade text-white "
+                                    id="nexticehockytab" role="tabpanel" >
+                                    <div className="main__table main__table__nextfootball">
+                                        <div className="table__wrap">
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-icehockey"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Löwen Frankfurt</h6>
+                                                            <h6>Eisbären Berlin</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>1.40</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>2.25</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            17:30 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Bietigheim Steelers</h6>
+                                                            <h6>Fischtown Pinguins
+                                                                Bremerhaven</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>1.83</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>1.48</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            10:30 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Düsseldorfer EG</h6>
+                                                            <h6>Schwenninger Wild Wings
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>1.67</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>2.40</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            11:30 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>Straubing Tigers</h6>
+                                                            <h6>Grizzlys Wolfsburg</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>1.53</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>2.10</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            17:30 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>HC Bili Tygri Liberec
+                                                            </h6>
+                                                            <h6>HC Vitkovice Steel</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>2.55</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>1.91</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            26:15 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="table__items b__bottom">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-basketball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>HC Ocelari Trinec</h6>
+                                                            <h6>BK Mlada Boleslav</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">1</span><span>1.60</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">2</span><span>2.80</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Today /
+                                                            15:30 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                className="table__footer table__footer__nextgo">
+                                                <a className="lobby" href="#show"><span>Show
+                                                    more</span><span
+                                                        className="icons"><i
+                                                            className="fas fa-chevron-down"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="tab-pane fade text-white " id="afootballtab"
+                                    role="tabpanel" >
+                                    <div className="main__table main__table__nextfootball">
+                                        <div className="table__wrap">
+                                            <div className="table__items">
+                                                <div className="t__items">
+                                                    <div
+                                                        className="t__items__left t__items__left__nextogo">
+                                                        <div className="t__items__icon"><i
+                                                            className="icon-afootball"></i>
+                                                        </div>
+                                                        <div className="content">
+                                                            <h6>New Orleans Saints @
+                                                            </h6>
+                                                            <h6>Tampa Bay Buccaneers
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="mart__point__two mart__pint__nextgo">
+                                                    <div className="mart__point__left"><a
+                                                        className="point__box"
+                                                        href="URL:void(0)"><span
+                                                            className="point__1">+3,5</span><span>1.91</span></a><a
+                                                                className="point__box"
+                                                                href="URL:void(0)"><span
+                                                                    className="point__1">-3,5</span><span>1.91</span></a>
+                                                    </div>
+                                                    <div className="mart__point__right"><a
+                                                        className="point__box-text point__box__nextto"
+                                                        href="#min"><span> Tomorrow
+                                                            / 07:15 </span><span
+                                                                className="icons"><i
+                                                                    className="fas fa-angle-right"></i></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

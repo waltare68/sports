@@ -1,0 +1,75 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+  
+model User{
+  id             String @id @default(uuid())
+  email          String @unique
+  phone         String? @unique
+  hashedPassword String @unique
+  createdAt      DateTime @default(now())
+  otp            String?
+  lastLoginDate  DateTime?
+  emailVerified  Boolean   @default(false)
+  avatarUrl      String?
+  userID         String?
+  accountArchived  Boolean   @default(false)
+  firstName      String?
+  lastName       String?
+  DOB            String?
+  Address        String?
+  AptSuite        String?
+  country         String?
+  city            String?
+  State           String?
+  postalcode      String?
+  UserBalance     Float  @default(0.00)
+
+
+
+}
+
+model UserBets {
+  id              String    @id @default(uuid())
+  email           String
+  betAmount       Float
+  possiblePayout  Float
+  totalOdds       Float
+  betType         String
+  DatePlaced      DateTime @default(now())
+  games           Game[]
+  Status          String?
+}
+model Game {
+  id              String    @id @default(uuid())
+  parentVirtualId String?
+  homeTeam        String
+  awayTeam        String
+  pick            String
+  userBet         UserBets   @relation(fields: [userBetId], references: [id])
+  userBetId       String
+  //@@index([userBetId])
+}
+
+model OnlineTransaction {
+  id          Int       @id @default(autoincrement())
+  email      String
+  phone      String?
+  amount     Float
+  dateTransacted    DateTime @default(now())
+  transRef     String
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  balanceUpdated   Int
+  channel String?
+}
+

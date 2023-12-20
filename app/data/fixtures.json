@@ -1,0 +1,66 @@
+{
+    "gameDayTimeline": [
+      
+      {
+        "date":"2023-12-18",
+        "startTime": "6:30 PM EAT",
+        "event": "Game Week 1",
+        "gameweek":"1"
+      },
+      {
+        "date":"2023-12-19",
+        "startTime": "2023-12-17T16:00:00+03:00",
+        "event": "Game Week 2",
+        "gameweek":"2"
+      },
+      {
+        "date":"2023-12-20",
+        "startTime": "2023-12-17T16:00:00+03:00",
+        "event": "Game Week 3",
+        "gameweek":"3"
+      },
+      {
+        "date":"2023-12-21",
+        "startTime": "4.00PM",
+        "event": "Game Week 4",
+        "gameweek":"4"
+      },
+      {
+        "date":"2023-12-22",
+        "startTime": "2023-12-17T16:00:00+03:00",
+        "event": "Game Week 1",
+        "gameweek":"1"
+      },
+      {
+        "date":"2023-12-23",
+        "startTime": "2023-12-17T16:00:00+03:00",
+        "event": "Game Week 1",
+        "gameweek":"1"
+      },
+      {
+        "date":"2023-12-24",
+        "startTime": "2023-12-17T16:00:00+03:00",
+        "event": "Game Week 1",
+        "gameweek":"1"
+      },
+      {
+        "date":"18/12/2023",
+        "startTime": "2023-12-17T16:00:00+03:00",
+        "event": "Game Week 1",
+        "gameweek":"1"
+      },
+      {
+        "date":"18/12/2023",
+        "startTime": "2023-12-17T16:00:00+03:00",
+        "event": "Game Week 1",
+        "gameweek":"1"
+      },
+      {
+        "date":"18/12/2023",
+        "startTime": "2023-12-17T16:00:00+03:00",
+        "event": "Game Week 1",
+        "gameweek":"1"
+      }
+
+    ]
+}
