@@ -20,7 +20,7 @@ export default function Deposit() {
 
     return (
         <>
-            <DashNav />
+            <DashNav userEmail={''} />
             <section className="dashboard__body mt__30 pb-60">
                 <div className="container">
                     <div className="row g-4">
@@ -199,7 +199,7 @@ export default function Deposit() {
                         </div>
                     </div>
                 </div>
-                <Footer_small_menu />
+                <Footer_small_menu isLoggedIn={false} userEmail={''} />
             </section>
 
         </>

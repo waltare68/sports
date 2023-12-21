@@ -6,7 +6,7 @@ import HistoryBody from './HistoryBody'
 export default function BetHistory() {
   return (
     <>
-    <DashNav/>
+    <DashNav userEmail={''}/>
     <HistoryBody/>
       
     </>

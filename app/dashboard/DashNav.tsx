@@ -9,6 +9,7 @@ interface naveProps{
 }
 
 export default function DashNav({userEmail}:naveProps) {
+  
   const [showMenu, setShowMenu] = useState(false);
   const [balance, setBalance] = useState<number>(0);
   useEffect(() => {

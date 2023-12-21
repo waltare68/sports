@@ -225,7 +225,7 @@ export default function Identity() {
                         </div>
                     </div>
                 </div>
-                <Footer_small_menu />
+                <Footer_small_menu isLoggedIn={false} userEmail={''} />
             </section>
         </>
     )

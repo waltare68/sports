@@ -5,7 +5,7 @@ import TransactionBoby from './TransactionBoby'
 export default function TransactionHistory() {
   return (
     <>
-      <DashNav/>
+      <DashNav userEmail={''}/>
       <TransactionBoby/>
     </>
   )

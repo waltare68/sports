@@ -22,7 +22,6 @@ export const authOptions:AuthOptions = {
             },
             authorize:async (credentials) =>{
 
-                console.log(credentials)
                 if(!credentials){
                     return null;
                 }

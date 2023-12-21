@@ -122,7 +122,7 @@ function LoginModal() {
                                                     <div className="create__btn" onClick={handleSubmit}>
                                                         <a className="cmn--btn" href="#"><span>Sign in</span></a>
                                                     </div>
-                                                    <p>Don't you have an account?<a href="#">Register</a></p>
+                                                    <p>Dont you have an account?<a href="#">Register</a></p>
                                                     <p>{message}</p>
                                                 </form>
                                             </div>

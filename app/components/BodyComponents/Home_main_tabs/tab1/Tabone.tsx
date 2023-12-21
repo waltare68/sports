@@ -8,7 +8,7 @@ interface Taboneprops {
     selectedTab: string
 }
 
-export default function ({ selectedTab }: Taboneprops) {
+export default function Tabone ({ selectedTab }: Taboneprops) {
     const className = selectedTab === 'home' ? 'tab-pane text-white fade show active' : 'tab-pane text-white fade';
 
     return (

@@ -6,7 +6,7 @@ import Footer_small_menu from '../components/Footer_small_menu'
 export default function Withdraw() {
   return (
     <>
-    <DashNav />
+    <DashNav userEmail={''} />
             <section className="dashboard__body mt__30 pb-60">
                 <div className="container">
                     <div className="row g-4">
@@ -184,7 +184,7 @@ export default function Withdraw() {
                         
                     </div>
                 </div>
-                <Footer_small_menu />
+                <Footer_small_menu isLoggedIn={false} userEmail={''} />
             </section>
       
     </>
