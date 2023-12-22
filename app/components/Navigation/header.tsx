@@ -4,10 +4,9 @@ import Countrylist from './navcomponents/countrylist'
 import SignUpModal from '../Modals/signupModal'
 import LoginModal from '../Modals/LoginModal'
 import { getServerSession } from 'next-auth'
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
-import { getSession, useSession } from 'next-auth/react'
 import CustomNavbarDropdown from './navcomponents/CustomNavbarDropdown'
 import Spinner from '../spinner'
+import { useSession } from 'next-auth/react'
 
 interface headerProps {
     userEmail: string;

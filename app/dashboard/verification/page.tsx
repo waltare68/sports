@@ -6,7 +6,7 @@ import Footer_small_menu from '../components/Footer_small_menu'
 export default function Verification() {
     return (
         <>
-            <DashNav />
+            <DashNav  userEmail={''}/>
 
             <section className="dashboard__body mt__30 pb-60">
                 <div className="container">
@@ -60,7 +60,7 @@ export default function Verification() {
                         </div>
                     </div>
                 </div>
-                <Footer_small_menu />
+                <Footer_small_menu isLoggedIn={true} userEmail={''} />
             </section>
 
 

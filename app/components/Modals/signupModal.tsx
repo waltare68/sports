@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Modal_nav from './tabsNav';
-import { signUp } from '@/app/api/register/route';
 
 function SignUpModal() {
     const [show, setShow] = useState(false);
@@ -19,10 +18,30 @@ function SignUpModal() {
     const [message, setMessage] = useState('');
 
     const handleSubmit = async () => {
-        console.log("handle submti");
-        setMessage("signing up..");
-        const msg = await signUp(email,password,firstname,lastname);
-        setMessage(msg)
+        //let msg =''// await signUp(email,password,firstname,lastname);
+
+        const fetchData = async () => {
+            try {
+                const response = await fetch('/api/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email,password,firstname,lastname }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to fetch balance');
+                }
+
+                const data = await response.json();
+                const msg = data.message;
+                setMessage(msg)
+            } catch (error) {
+                console.error('Error fetching balance:', error);
+            }
+        };
+        
         
     };
 

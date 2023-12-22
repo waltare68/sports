@@ -26,18 +26,18 @@ interface Countdown {
     hours: number;
     minutes: number;
     seconds: number;
-  }
-  
-  interface GameDay {
+}
+
+interface GameDay {
     date: string;
     startTime: string;
     event: string;
     gameweek: string;
-  }
-  
-  interface CountdownTimerProps {
+}
+
+interface CountdownTimerProps {
     startTime: string;
-  }
+}
 export default function VirtualLeague() {
     //const [selectedEvents, setSelectedEvents] = useState<{ [key: string]: string }>({});
     const [selectedEvents, setSelectedEvents] = useState(() => {
@@ -47,66 +47,127 @@ export default function VirtualLeague() {
     const [selectedEventClasses, setSelectedEventClasses] = useState(() => {
         const storedData = localStorage.getItem('selectedEventClasses');
         return storedData ? Object.values(JSON.parse(storedData)) : [];
-      });
-    
+    });
+
     const storedEventsString = localStorage.getItem('selectedvirtualEvents');
     const storedEvents = storedEventsString ? JSON.parse(storedEventsString) : {};
-    
+
     function calculateCountdown(targetTime: string): Countdown {
         const targetDate = new Date(targetTime).getTime();
         const now = new Date().getTime();
         const timeDifference = targetDate - now;
-    
+
         if (timeDifference <= 0) {
-          // Event has already started or passed
-          return {
-            days: 0,
-            hours: 0,
-            minutes: 0,
-            seconds: 0,
-          };
+            // Event has already started or passed
+            return {
+                days: 0,
+                hours: 0,
+                minutes: 0,
+                seconds: 0,
+            };
         }
-    
+
         // Calculate days, hours, minutes, and seconds
         const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
         const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-    
+
         return {
-          days,
-          hours,
-          minutes,
-          seconds,
+            days,
+            hours,
+            minutes,
+            seconds,
         };
-      }
+    }
     const getCurrentGameWeek = () => {
         const currentDate = new Intl.DateTimeFormat('en-US', {
             timeZone: 'Africa/Nairobi', // EAT timezone
-        }).format(new Date()); 
-      
+        }).format(new Date());
+
         for (const gameDay of timeline.gameDayTimeline) {
-          const gameDate = gameDay.date;
-          if (formatDate(currentDate) == gameDate) {
-            return gameDay.gameweek;
-          }
+            const gameDate = gameDay.date;
+            if (formatDate(currentDate) == gameDate) {
+                return gameDay.gameweek;
+            }
         }
         return "1";
-      };
+    };
 
     const currentDateInEAT = new Intl.DateTimeFormat('en-US', {
         timeZone: 'Africa/Nairobi', // EAT timezone
-    }).format(new Date()); 
+    }).format(new Date());
 
     let gameweek = getCurrentGameWeek().toString();
     const gameDay = gameweek;
-    const games = virtualLeague[gameweek];
+    const getGamesForGameweek = (gameweek: string) => {
+        switch (gameweek) {
+            case '1':
+                return virtualLeague["1"];
+            case '2':
+                return virtualLeague["2"];
+            case '3':
+                return virtualLeague["3"];
+            case '4':
+                return virtualLeague["4"];
+            case '5':
+                return virtualLeague["5"];
+            case '6':
+                return virtualLeague["6"];
+            case '7':
+                return virtualLeague["7"];
+            case '8':
+                return virtualLeague["8"];
+            case '9':
+                return virtualLeague["9"];
+            case '10':
+                return virtualLeague["10"];
+            case '11':
+                return virtualLeague["11"];
+            case '12':
+                return virtualLeague["12"];
+            case '13':
+                return virtualLeague["13"];
+            case '14':
+                return virtualLeague["14"];
+            case '15':
+                return virtualLeague["15"];
+            case '16':
+                return virtualLeague["15"];
+            case '17':
+                return virtualLeague["15"];
+            case '18':
+                return virtualLeague["18"];
+            case '19':
+                return virtualLeague["19"];
+            case '20':
+                return virtualLeague["19"];
+            case '21':
+                return virtualLeague["21"];
+            case '22':
+                return virtualLeague["22"];
+            case '23':
+                return virtualLeague["23"];
+            case '24':
+                return virtualLeague["23"];
+            case '25':
+                return virtualLeague["26"];
+            case '26':
+                return virtualLeague["26"];
+            
+            default:
+                return virtualLeague["1"];
+        }
+    };
+    const games = getGamesForGameweek(gameweek);
+    
+    // games = virtualLeague[gameweek];
     const handleEventClick = (parent_virtual_id: string,
         event: string,
         home_team: string,
         away_team: string,
         odds: string) => {
-        
+
         const storedEventDataString = localStorage.getItem('selectedVirtualEventData');
         const storedEventData = storedEventDataString ? JSON.parse(storedEventDataString) : {};
 
@@ -142,14 +203,14 @@ export default function VirtualLeague() {
     useEffect(() => {
         // Save to localStorage whenever selectedEventClass changes
         localStorage.setItem('selectedEventClasses', JSON.stringify(selectedEventClasses));
-      }, [selectedEventClasses]);
+    }, [selectedEventClasses]);
 
     return (
         <>
             <div className="live__heightlight trending__now">
                 <div className="section__title">
                     <h4>Game week {gameDay}</h4>
-                    <h6>Starting in <span><CountdownTimer startTime={parseDateMMDDYYYY(currentDateInEAT)}/></span></h6>
+                    <h6>Starting in <span><CountdownTimer startTime={parseDateMMDDYYYY(currentDateInEAT)} /></span></h6>
                 </div>
 
                 <div className="height__table">
@@ -188,7 +249,7 @@ export default function VirtualLeague() {
 
                                     </div>
 
-                                    {games.map((game:any, index:any) => (
+                                    {games.map((game: any, index: any) => (
                                         <>
                                             <div key={index}
                                                 className="table__items b__bottom">
@@ -207,35 +268,35 @@ export default function VirtualLeague() {
                                                     <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event === 'home' ? 'pointBoxSelected' : ''}`}
                                                         onClick={() => handleEventClick(game.parent_virtual_id, 'home', game.home_team, game.away_team, game.markets[1].odds[0].odd_value)} href="#0box">
                                                         {game.markets[1].odds[0].odd_value}</a>
-                                                    <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event  === 'draw' ? 'pointBoxSelected' : ''}`}
+                                                    <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event === 'draw' ? 'pointBoxSelected' : ''}`}
                                                         onClick={() => handleEventClick(game.parent_virtual_id, 'draw', game.home_team, game.away_team, game.markets[1].odds[1].odd_value)} href="#0box">
                                                         {game.markets[1].odds[1].odd_value}
                                                     </a>
-                                                    <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event  === 'away' ? 'pointBoxSelected' : ''}`}
+                                                    <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event === 'away' ? 'pointBoxSelected' : ''}`}
                                                         onClick={() => handleEventClick(game.parent_virtual_id, 'away', game.home_team, game.away_team, game.markets[1].odds[2].odd_value)} href="#0box">
                                                         {game.markets[1].odds[2].odd_value}</a>
                                                 </div>
 
                                                 <div className="mart__point__two">
                                                     <div className="mart__point__left"><a
-                                                        className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event  === 'over' ? 'pointBoxSelected' : ''}`}
+                                                        className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event === 'over' ? 'pointBoxSelected' : ''}`}
                                                         onClick={() => handleEventClick(game.parent_virtual_id, 'over', game.home_team, game.away_team, game.markets[0].odds[0].odd_value)} href="URL:void(0)">
                                                         {game.markets[0].odds[0].odd_value}</a>
-                                                        <a className={`point__box ${selectedEvents[game.parent_virtual_id]?.event  === 'under' ? 'pointBoxSelected' : ''}`}
+                                                        <a className={`point__box ${selectedEvents[game.parent_virtual_id]?.event === 'under' ? 'pointBoxSelected' : ''}`}
                                                             onClick={() => handleEventClick(game.parent_virtual_id, 'under', game.home_team, game.away_team, game.markets[0].odds[1].odd_value)} href="URL:void(0)">
                                                             {game.markets[0].odds[1].odd_value}
                                                         </a>
                                                     </div>
                                                     <div className="mart__point__right">
-                                                        <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event  === '1/x' ? 'pointBoxSelected' : ''}`}
+                                                        <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event === '1/x' ? 'pointBoxSelected' : ''}`}
                                                             onClick={() => handleEventClick(game.parent_virtual_id, '1/x', game.home_team, game.away_team, game.markets[2].odds[0].odd_value)} href="URL:void(0)">
                                                             {game.markets[2].odds[0].odd_value}
                                                         </a>
-                                                        <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event  === '1/2' ? 'pointBoxSelected' : ''}`}
+                                                        <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event === '1/2' ? 'pointBoxSelected' : ''}`}
                                                             onClick={() => handleEventClick(game.parent_virtual_id, '1/2', game.home_team, game.away_team, game.markets[2].odds[1].odd_value)} href="URL:void(0)">
                                                             {game.markets[2].odds[1].odd_value}
                                                         </a>
-                                                        <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event  === 'x/2' ? 'pointBoxSelected' : ''}`}
+                                                        <a className={`point__box ${selectedEvents?.[game.parent_virtual_id]?.event === 'x/2' ? 'pointBoxSelected' : ''}`}
                                                             onClick={() => handleEventClick(game.parent_virtual_id, 'x/2', game.home_team, game.away_team, game.markets[2].odds[2].odd_value)} href="URL:void(0)">
                                                             {game.markets[2].odds[2].odd_value}
                                                         </a>
@@ -344,18 +405,18 @@ function formatDateTime(dateTimeString: string) {
     return `${formattedDate} / ${formattedTime}`;
 }
 
-function parseDateMMDDYYYY(dateString:string) {
+function parseDateMMDDYYYY(dateString: string) {
     const [month, day, year] = dateString.split('/');
     const formattedDate = new Date(`${year}-${month}-${day} 16:00:00`).toISOString();
     return formattedDate.substring(0, 19).replace('T', ' ');
-  }
+}
 
-  function formatDate(dateString:string) {
+function formatDate(dateString: string) {
     // Parse the date string
     const dateObj = new Date(dateString);
-  
+
     // Format the date in the desired format
     const formattedDate = dateObj.toISOString().slice(0, 10);
-  
+
     return formattedDate;
-  }
+}

@@ -6,11 +6,11 @@ import Main_body_wrapper from '../BodyComponents/Main_body_wrapper'
 export default function CustomPageLayout() {
   return (
       <>
-      <Header/>
-      <MainTab_slide/>
-      <Main_body_wrapper>
-        
-      </Main_body_wrapper>
+      <Header userEmail={''}/>
+      <MainTab_slide selectedTab={''} onSelectTab={function (tab: string): void {
+        throw new Error('Function not implemented.')
+      } }/>
+      
 
     </>
   )

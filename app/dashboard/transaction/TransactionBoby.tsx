@@ -117,7 +117,7 @@ export default function TransactionBoby() {
                     </div>
                 </div>
             </div>
-            <Footer_small_menu/>
+            <Footer_small_menu isLoggedIn={true} userEmail={''}/>
       </section>
       
     </>

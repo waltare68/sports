@@ -200,16 +200,15 @@ export default function Betslip_wrap({ IsLoggedIn, UserEmail }: BetslipProps) {
                     possiblePayout: totalvirtualPayout,
                     totalOdds: totalvirtualOdds,
                     betType: 'virtual',
-                    games: selectedvirtualEvents.map((event: { parent_virtual_id: string; home_team: string; away_team: string; event: string;odds:string }) => {
-                      
-                      return {
-                        parent_virtual_id: event.parent_virtual_id,
-                        hometeam: event.home_team,
-                        awayteam: event.away_team,
-                        pick: event.event,
-                        odds: event.odds , 
-                        // Add other properties as needed
-                      };
+                    games: Object.values(selectedvirtualEvents).map((event: SelectedEvent) => {
+                        return {
+                          parent_virtual_id: event.parentMatchId, // Assuming parentMatchId is the correct property
+                          hometeam: event.home_team,
+                          awayteam: event.away_team,
+                          pick: event.event,
+                          odds: event.odds,
+                          // Add other properties as needed
+                        };
                     }),
                   };
             }
