@@ -15,6 +15,9 @@ import { useState } from 'react'
 import { useSession } from 'next-auth/react'
 import BarLoader from 'react-spinners/BarLoader'
 import Virtualtab from './components/BodyComponents/Home_main_tabs/virtualTab/Virtualtab'
+import FootballTab from './components/BodyComponents/Home_main_tabs/tab1/FootballTab'
+import Tennistab from './components/BodyComponents/Home_main_tabs/tennistab/Tennistab'
+import LiveTab from './components/BodyComponents/Home_main_tabs/LiveTab/LiveTab'
 
 export default function  Home() {
   const { data: session, status } = useSession()
@@ -53,6 +56,9 @@ export default function  Home() {
             <MainTabtwo selectedTab={selectedTab}/>
             <Main_tab_three selectedTab={selectedTab}/>
             <Virtualtab selectedTab={selectedTab}/>
+            <FootballTab selectedTab = {selectedTab}/>
+            <Tennistab selectedTab={selectedTab}/>
+            <LiveTab selectedTab={selectedTab}/>
           </Tab_wrapper>
         </Left_site_section>
         <Betslip_wrap IsLoggedIn={session && session.user?.email ? true:false} UserEmail={(session && session.user?.email)? session.user.email : ''} />

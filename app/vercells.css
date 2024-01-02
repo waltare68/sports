@@ -23521,9 +23521,9 @@ p {
 .header-wrapper .mneu-btn-grp .language__wrap .flag {
   position: absolute;
   top: 4px;
-  left: 0;
-  width: 28px;
-  height: 20px
+  left: 6px;
+  width: 25px;
+  height: 21px;
 }
 
 .header-wrapper .lang .language__wrap .flag img,

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { BiHome } from "react-icons/bi";
 import { MdLiveTv } from "react-icons/md";
 import { FcCalendar } from "react-icons/fc";
@@ -10,8 +10,33 @@ interface TabListProps {
     selectedTab: string;
     onSelectTab: (tab: string) => void;
   }
+
 export default function MainTab_slide({selectedTab, onSelectTab}:TabListProps) {
-    
+    const [searchInput, setSearchInput] = useState('');
+    const [isSearch, setisSearch] = useState(false);
+    const [searchNotAvailable, setSearchNotAvailable] = useState(false);
+    const searchPopupRef = useRef<HTMLDivElement | null>(null);
+
+   const handleSearch = () => {
+    setisSearch(true); 
+  }; 
+
+  
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+        searchPopupRef.current &&
+        !searchPopupRef.current.contains(event.target as Node)
+      ) {
+      setisSearch(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside);
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+  
   return (
     <>
       <section className="main__tab__slide">
@@ -22,22 +47,22 @@ export default function MainTab_slide({selectedTab, onSelectTab}:TabListProps) {
                 </button>
             </li>
             <li className="nav-item" role="presentation">
-                <button className="nav-link" id="main-tab2" data-bs-toggle="tab"
+                <button className={`nav-link ${selectedTab === 'live' ? 'active' : ''}`}id="main-tab2"  onClick={() => onSelectTab('live')} data-bs-toggle="tab"
                     data-bs-target="#mainTab2" type="button" role="tab" aria-selected="false"><MdLiveTv/><span>Live</span>
                 </button>
            </li>
             <li className="nav-item" role="presentation">
-                <button className="nav-link" id="main-tab3" data-bs-toggle="tab" data-bs-target="#mainTab3" type="button" role="tab" 
+                <button className={`nav-link ${selectedTab === 'today' ? 'active' : ''}`} id="main-tab3" onClick={() => onSelectTab('today')} data-bs-toggle="tab" data-bs-target="#mainTab3" type="button" role="tab" 
                         aria-selected="false"><span className="icons"><FcCalendar /></span><span>Today</span>
                 </button>
             </li>
             <li className="nav-item" role="presentation">
-                <button className="nav-link" id="main-tab4" data-bs-toggle="tab" data-bs-target="#mainTab4" type="button" role="tab"
+                <button className={`nav-link ${selectedTab === 'football' ? 'active' : ''}`} id="main-tab4" onClick={() => onSelectTab('football')} data-bs-toggle="tab" data-bs-target="#mainTab4" type="button" role="tab"
                          aria-selected="false"><span className="icons"><GiSoccerField /></span><span>Football</span>
                 </button>
             </li>
             <li className="nav-item" role="presentation">
-                <button className="nav-link" id="main-tab5" data-bs-toggle="tab" data-bs-target="#mainTab5" type="button" role="tab" 
+                <button className={`nav-link ${selectedTab === 'tennis' ? 'active' : ''}`} id="main-tab5"  onClick={() => onSelectTab('tennis')} data-bs-toggle="tab" data-bs-target="#mainTab5" type="button" role="tab" 
                         aria-selected="false"><span className="icons"><IoTennisballOutline /></span><span>Tennis</span>
                 </button>
            </li>
@@ -49,12 +74,12 @@ export default function MainTab_slide({selectedTab, onSelectTab}:TabListProps) {
             </li>
             <li className="nav-item">
                 <div className="search-button">
-                        <button className="nav-link"><span className="icons">
+                        <button className="nav-link" onClick={handleSearch}><span className="icons">
                         <FaSearch /></span><span>Search</span>
                         </button>
-                    <div className="search-popup false">
+                    <div className={`search-popup ${isSearch ? 'd-block' : 'false'}`}>
                         <div className="search-bg"></div>
-                        <div className="search-form true">
+                        <div className= {`search-form ${isSearch ? 'end-0' : 'false'}`}>
                             <form action="#">
                                 <div className="form"><input type="text" id="searchs"
                                         placeholder="Search Your Fovatires Game" /></div>

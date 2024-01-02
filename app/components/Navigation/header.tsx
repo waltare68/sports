@@ -19,32 +19,32 @@ const Header = ({ userEmail }: headerProps) => {
         setIsOpen(!isOpen);
     };
     const [balance, setBalance] = useState<number>(0);
-    const [loadingBalance,setLoadingBalance] =useState(true);
-   // useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const email = { userEmail };
-                const response = await fetch('/api/profile/balance', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ email }),
-                });
+    const [loadingBalance, setLoadingBalance] = useState(true);
+    // useEffect(() => {
+    const fetchData = async () => {
+        try {
+            const email = { userEmail };
+            const response = await fetch('/api/profile/balance', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email }),
+            });
 
-                if (!response.ok) {
-                    throw new Error('Failed to fetch balance');
-                }
-
-                const data = await response.json();
-                setBalance(data.balance);
-                setLoadingBalance(false);
-            } catch (error) {
-                console.error('Error fetching balance:', error);
+            if (!response.ok) {
+                throw new Error('Failed to fetch balance');
             }
-        };
 
-        fetchData();
+            const data = await response.json();
+            setBalance(data.balance);
+            setLoadingBalance(false);
+        } catch (error) {
+            console.error('Error fetching balance:', error);
+        }
+    };
+
+    fetchData();
     //}, []);
     return (
         <>
@@ -59,6 +59,18 @@ const Header = ({ userEmail }: headerProps) => {
                             </div>
                             <div className="lang d-flex align-items-center px-2">
 
+                                {session && session.user?.email ? (
+                                    <>
+                                        <div className='text-white'>{loadingBalance ? <Spinner /> : `Bal $${balance}`}</div>
+                                        <div className="items d__cmn p-1">
+                                            <a className="cmn--btn" href="/dashboard/deposit"><span>Deposit</span></a>
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                    </>
+                                )}
+
                                 <div className="language__wrap">
 
                                     <div className="flag"><img alt="flag" loading="lazy" width="32" height="24" decoding="async"
@@ -66,9 +78,11 @@ const Header = ({ userEmail }: headerProps) => {
                                         srcSet="/flag1.png"
                                         src="/flag1.png" />
                                     </div>
-                                    <div className="selector"><button id="headlessui-listbox-button-:R1kpbdcba:" type="button"
-                                        aria-haspopup="listbox" aria-expanded="false" data-headlessui-state=""><span
-                                            className="">En</span></button></div>
+                                    <div className="selector">
+                                        <button id="headlessui-listbox-button-:R1kpbdcba:" type="button"
+                                            aria-haspopup="listbox" aria-expanded="false" data-headlessui-state=""><span
+                                                className="">En</span></button>
+                                    </div>
                                 </div>
                                 <div className={`header-bar d-lg-none ${isOpen ? 'active' : ''}`} onClick={handleMenuToggle}>
                                     <span></span>

@@ -66,8 +66,11 @@ export default function DashNav({userEmail}:naveProps) {
               <div className="items d__text"><span className="small">Your balance</span>
                 <h6>${balance}</h6>
               </div>
-              <div className="items d__cmn"><a className="cmn--btn" href="/dashboard/deposit"><span>Deposit</span></a></div>
-              <div className="items dashboar__social"><a className="icons" href="URL:void()"><i
+              <div className="items d__cmn">
+                <a className="cmn--btn" href="/dashboard/deposit"><span>Deposit</span></a>
+              </div>
+              <div className="items dashboar__social"><a className="icons" href="URL:void()">
+                <i
                 className="icon-gift"></i><span className="count">2</span></a><a className="icons"
                   href="URL:void()"><i className="icon-message"></i><span className="count">2</span></a>
                 <CustomNavbarDropdown />
