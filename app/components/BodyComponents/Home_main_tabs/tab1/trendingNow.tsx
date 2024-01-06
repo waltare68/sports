@@ -156,7 +156,7 @@ export default function TrendingNow() {
                                                             <div className="t__items__left">
                                                                 <h6>{match.home_team}</h6>
                                                                 <span className="text">{match.away_team}</span>
-                                                                <p><a href="URL:void(0)">{formatDateTime(match.start_time)}</a>
+                                                                <p>
                                                                     <a className="today" href="#">{formatDateTime(match.start_time)}</a>
                                                                 </p>
                                                             </div>
@@ -165,8 +165,6 @@ export default function TrendingNow() {
                                                             <a className="twing twing__right" href="#">
                                                                 <i className="icon-twer"></i>
                                                             </a>
-                                                            <a className="mart opo" href="URL:void(0)">
-                                                                <i className="icon-pmart"></i></a>
                                                             <a className={`point__box ${selectedEvents[match.parent_match_id] === 'home' ? 'pointBoxSelected' : ''}`}
                                                                 onClick={() => handleEventClick(match.parent_match_id, 'home', match.home_team, match.away_team, getOddsForHomeTeam(match))} href="#0box">{getOddsForHomeTeam(match)}</a>
                                                             <a className={`point__box ${selectedEvents[match.parent_match_id] === 'draw' ? 'pointBoxSelected' : ''}`}

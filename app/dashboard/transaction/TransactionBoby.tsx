@@ -1,9 +1,59 @@
-import React from 'react'
+"use client";
+import React, { useEffect, useState } from 'react'
 import Dashboard_sidebar from '../components/Dashboard_sidebar'
 import Footer_small_menu from '../components/Footer_small_menu'
 import { FaCalendarAlt } from 'react-icons/fa';
+import Notransactions from './Notransactions';
+interface Transprops{
+    userEmail:String
+}
+interface Transaction {
+    id: number;
+    email: string;
+    phone?: string;
+    amount:  number;
+    dateTransacted :   Date
+    transRef :    String;
+    createdAt:   Date;
+    updatedAt:   Date;
+    balanceUpdated:   number
+    channel?: String
+  }
 
-export default function TransactionBoby() {
+export default function TransactionBoby({userEmail}:Transprops) {
+    const [transactions, setTransactions] = useState<Transaction[]>([]);
+
+    useEffect(() => {
+        const fetchTransactions = async () => {
+            try {
+              const response = await fetch('/api/transactions', {
+                method: 'POST', // Use POST method to send data in the request body
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email: userEmail }),
+              });
+      
+              if (!response.ok) {
+                throw new Error('Failed to fetch transactions');
+              }
+              const data = await response.json()
+              console.log()
+              if (data.transactions) {
+
+                setTransactions(data.transactions);
+              } else {
+                setTransactions([]); // If no transactions are returned
+              }
+
+            } catch (error) {
+              console.error('Error fetching transactions:', error);
+            }
+          };
+  
+      fetchTransactions();
+    }, []);
+
   return (
     <>
      <section className="dashboard__body mt__30 pb-60">
@@ -34,10 +84,12 @@ export default function TransactionBoby() {
                                 </div>
                             </div>
                             <div className="casinoform__tabe">
+                            {transactions.length > 0 ? (''):
+                            <Notransactions/>}
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>Game</th>
+                                            <th>Transaction Ref No</th>
                                             <th>Payment Methods</th>
                                             <th>Amount</th>
                                             <th>Status</th>
@@ -46,70 +98,20 @@ export default function TransactionBoby() {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>2PQ8B4KYMJ</td>
-                                            <td>Bank / CC</td>
-                                            <td>5,591 USD</td>
-                                            <td className="cancel">Cancel</td>
-                                            <td>8.55</td>
-                                            <td className="bold">...</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4TQRW5WXF4</td>
-                                            <td>Credit Card</td>
-                                            <td>5,591 USD</td>
-                                            <td className="pending">Prnding</td>
-                                            <td>2.70</td>
-                                            <td className="bold">...</td>
-                                        </tr>
-                                        <tr>
-                                            <td>XR97K86R7Y</td>
-                                            <td>Bank / CC</td>
-                                            <td>5,591 USD</td>
-                                            <td className="cancel">Cancel</td>
-                                            <td>8.50</td>
-                                            <td className="bold">...</td>
-                                        </tr>
-                                        <tr>
-                                            <td>VEJP8A5J87</td>
-                                            <td>Bank</td>
-                                            <td>5,591 USD</td>
-                                            <td className="complate">Complete</td>
-                                            <td>7.05</td>
-                                            <td className="bold">...</td>
-                                        </tr>
-                                        <tr>
-                                            <td>JKNFWEJ123</td>
-                                            <td>Credit Card</td>
-                                            <td>5,591 USD</td>
-                                            <td className="cancel">Cancel</td>
-                                            <td>3.05</td>
-                                            <td className="bold">...</td>
-                                        </tr>
-                                        <tr>
-                                            <td>NC8S4QJ4K2</td>
-                                            <td>Bank</td>
-                                            <td>5,591 USD</td>
-                                            <td className="pending">Prnding</td>
-                                            <td>3.20</td>
-                                            <td className="bold">...</td>
-                                        </tr>
-                                        <tr>
-                                            <td>DGPSN7SRM4</td>
-                                            <td>Bank / CC</td>
-                                            <td>5,591 USD</td>
-                                            <td className="complate">Complete</td>
-                                            <td>2.40</td>
-                                            <td className="bold">...</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ZT3FA5D8N7</td>
-                                            <td>Bank</td>
-                                            <td>5,591 USD</td>
-                                            <td className="complate">Complete</td>
-                                            <td>1.95</td>
-                                            <td className="bold">...</td>
-                                        </tr>
+                                    {transactions.map((transaction:Transaction) => (
+                                    <tr key={transaction.id}>
+                                        <td>{transaction.transRef}</td>
+                                        <td>{transaction.channel}</td>
+                                        <td>${transaction.amount}</td>
+                                        <td className="complate">complete</td>
+                                        <td>1.00</td>
+                                        <td className="bold">...</td>
+
+
+                                    </tr>
+
+                                     ))}
+                                   
                                     </tbody>
                                 </table>
                             </div>

@@ -61,7 +61,7 @@ const Header = ({ userEmail }: headerProps) => {
 
                                 {session && session.user?.email ? (
                                     <>
-                                        <div className='text-white'>{loadingBalance ? <Spinner /> : `Bal $${balance}`}</div>
+                                        <div className='text-white'>{loadingBalance ? <Spinner /> : `$${balance}`}</div>
                                         <div className="items d__cmn p-1">
                                             <a className="cmn--btn" href="/dashboard/deposit"><span>Deposit</span></a>
                                         </div>

@@ -16,35 +16,44 @@ interface UserBet {
         homeTeam: string;
         awayTeam: string;
         pick: string;
+        result:string;
     }[];
 }
-export default function HistoryBody() {
+interface historyProps {
+    userEmail: String
+}
+export default function HistoryBody({ userEmail }: historyProps) {
     const [userBets, setUserBets] = useState<UserBet[]>([]);
-    const email = "mary@gmail.com"
+    const email = userEmail
     useEffect(() => {
         const fetchData = async () => {
-          try {
-            const response = await fetch('/api/games/getBets', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({ email }),
-            });
-    
-            if (!response.ok) {
-              throw new Error('Failed to fetch data');
+            if (email == "") {
+                return
             }
-    
-            const data = await response.json();
-            setUserBets(data);
-          } catch (error) {
-            console.error('Error fetching data:', error);
-          }
+            try {
+                const response = await fetch('/api/games/getBets', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+
+                const data = await response.json();
+                if (Array.isArray(data)) {
+                    setUserBets(data);
+                }
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
         };
-    
+
         fetchData();
-      }, [email]); 
+    }, [email]);
 
     return (
         <>
@@ -62,15 +71,15 @@ export default function HistoryBody() {
                                         <div className="col-xl-6">
                                             <div className="casino__date">
                                                 <h4 className="f__title">From</h4>
-                                                <div className="calender-bar"><input type="text" className="datepicker"
-                                                    placeholder="2023-2-2" /><i className="icon-calender"></i></div>
+                                                <div className="calender-bar"><input type="date" className="datepicker"
+                                                    placeholder="2023-2-2" /></div>
                                             </div>
                                         </div>
                                         <div className="col-xl-6">
                                             <div className="casino__date">
                                                 <h4 className="f__title">Until</h4>
-                                                <div className="calender-bar"><input type="text" className="datepicker"
-                                                    placeholder="2023-2-2" /><i className="icon-calender"></i></div>
+                                                <div className="calender-bar"><input type="date" className="datepicker"
+                                                    placeholder="2023-2-2" /></div>
                                             </div>
                                         </div>
                                     </div>
@@ -85,6 +94,7 @@ export default function HistoryBody() {
                                                 <th>Possible Payout</th>
                                                 <th>Total Odds</th>
                                                 <th>Status</th>
+                                                <th>Result</th>
                                                 <th>games</th>
                                                 <th>More</th>
                                             </tr>
@@ -98,18 +108,21 @@ export default function HistoryBody() {
                                                         <td>{userBet.betAmount}</td>
                                                         <td>{userBet.possiblePayout}</td>
                                                         <td>{userBet.totalOdds}</td>
-                                                        <td className="pending">Pending</td>
+                                                        <td className={userBet.Status !== null ? "complate" : "pending"}>{userBet.Status !== null ? "Complete" : "Pending"}</td>
+                                                    
+                                                        <td>{userBet.Status}</td>
                                                         <td>
                                                             <ul>
                                                                 {userBet.games.map((game) => (
-                                                                    <li key={game.id}>
-                                                                        {game.homeTeam} vs {game.awayTeam} - Pick: {game.pick}
+                                                                    <li key={game.id} className="bg-gray-300">
+                                                                        {game.homeTeam} vs {game.awayTeam}
+                                                                        <span className="cancel"> Pick: {game.pick} result {game.result}</span>
                                                                     </li>
                                                                 ))}
                                                             </ul>
                                                         </td>
                                                         <td className="bold">...</td>
-                                                        
+
                                                     </tr>
                                                 </>
 
@@ -117,7 +130,7 @@ export default function HistoryBody() {
                                             ))}
 
 
-                                            
+
                                         </tbody>
                                     </table>
                                 </div>

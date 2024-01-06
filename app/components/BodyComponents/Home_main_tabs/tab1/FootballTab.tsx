@@ -7,7 +7,6 @@ interface Taboneprops {
 }
 
 const FootballTab = ({ selectedTab }: Taboneprops) => {
-    console.log(selectedTab) 
     const className = selectedTab === 'football' ? 'tab-pane text-white fade show active' : 'tab-pane text-white fade';
 
   return (

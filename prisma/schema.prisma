@@ -55,9 +55,11 @@ model Game {
   homeTeam        String
   awayTeam        String
   pick            String
+  test           String?
   userBet         UserBets   @relation(fields: [userBetId], references: [id])
   userBetId       String
-  //@@index([userBetId])
+  status          String?
+  result          String?
 }
 
 model OnlineTransaction {

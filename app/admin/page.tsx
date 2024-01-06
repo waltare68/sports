@@ -2,11 +2,12 @@
 import React, { useState } from 'react'
 import DashboardCards from '../components/widgets/cards'
 import UsersTable from './usersTable'
+import Sidebar from './sidebar/Sidebar';
 
 export default function AdminDashbboard() {
     const [adminPassword,setAdminPassword] = useState('')
     const [adminEmail,setAdminEmail] = useState('')
-    const [showContent,setShowCOntent] = useState(false);
+    const [showContent,setShowCOntent] = useState(true);
     const [message,setMessage] =useState('')
 
     const LogAdmin = async () => {
@@ -40,18 +41,25 @@ export default function AdminDashbboard() {
             { showContent?(
             <div className="mt-12">
                 <div className="">
+                  <Sidebar/>
+                <main className='flex-grow flex flex-col min-h-screen p-4 sm:ml-64'> 
                     <DashboardCards />
                     <UsersTable/>
+                  </main>
+
                 </div>
             </div>
+            
             ):(
                 <>
+              
+
                  <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             className="mx-auto h-10 w-auto"
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt="Your Company"
+            alt="Zikani"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
             Sign in to your account
