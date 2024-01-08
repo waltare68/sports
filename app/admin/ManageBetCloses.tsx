@@ -17,6 +17,7 @@ interface UserBet {
     Status?: string;
     games: Game[];
     DatePlaced:string
+    possiblePayout:number
 }
 
 const ManageBetCloses = () => {
@@ -150,7 +151,7 @@ const ManageBetCloses = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {userBets.map(userBet => (
+                        {userBets?.map(userBet => (
                             <tr key={userBet.id} className='bg-b1acad m-12 border-2 border-solid'>
                                 <td>{userBet.email}</td>
                                 <td>{userBet.DatePlaced}</td>

@@ -3,12 +3,12 @@ import GameItemInfo from '@/app/components/gameinfo'
 import React, { useState } from 'react'
 import Link from 'next/link'
 
-import gamesData from '../../../../data/games2023nov19.json';
-import { FaLock, FaStar,FaBasketballBall } from "react-icons/fa";
-import { IoFootball,IoTennisball,IoGolfSharp } from "react-icons/io5";
+import gamesData from '../../../../data/gamesData.json';
+import { FaLock, FaStar, FaBasketballBall } from "react-icons/fa";
+import { IoFootball, IoTennisball, IoGolfSharp } from "react-icons/io5";
 import { FcNext } from "react-icons/fc";
 export default function TrendingNow() {
-    const [activeTrendingtab,setActiveTrendingTab] = useState('football')
+    const [activeTrendingtab, setActiveTrendingTab] = useState('football')
     const [selectedEvents, setSelectedEvents] = useState<{ [key: string]: string }>({});
     const storedEventsString = localStorage.getItem('selectedEvents');
     const storedEvents = storedEventsString ? JSON.parse(storedEventsString) : {};
@@ -24,36 +24,39 @@ export default function TrendingNow() {
         }));
         const storedEventDataString = localStorage.getItem('selectedEventData');
         const storedEventData = storedEventDataString ? JSON.parse(storedEventDataString) : {};
-        
-        
+
+
         if (storedEventData[parentMatchId] && storedEventData[parentMatchId].event === event) {
             delete storedEventData[parentMatchId];
             localStorage.setItem('selectedEventData', JSON.stringify(storedEventData));
         }
-        else if(storedEventData[parentMatchId] && storedEventData[parentMatchId].event != event){
+        else if (storedEventData[parentMatchId] && storedEventData[parentMatchId].event != event) {
             storedEventData[parentMatchId] = {
                 parentMatchId,
                 event,
                 home_team,
                 away_team,
                 odds,
-              };
+            };
         }
-        else{
+        else {
             storedEventData[parentMatchId] = {
                 parentMatchId,
                 event,
                 home_team,
                 away_team,
                 odds,
-              };
+            };
         }
-        
+
         localStorage.setItem('selectedEventData', JSON.stringify(storedEventData));
         window.dispatchEvent(new Event("storage"));
 
     };
 
+    const currentTime = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Africa/Nairobi', // EAT timezone
+    }).format(new Date());
     return (
         <>
             <div className="live__heightlight trending__now">
@@ -62,19 +65,19 @@ export default function TrendingNow() {
                 </div>
                 <div className="heightlight__tab">
                     <div className="nav b__bottom" id="nav-tabheighttrending" role="tablist">
-                        <button onClick={() => setActiveTrendingTab('football')} className={`nav-link ${activeTrendingtab === 'football' ? 'active' : ''}`} id="lightlighttabtrend" data-bs-toggle="tab" 
-                             data-bs-target="#height1trend" type="button" role="tab" aria-selected="true">
-                            <span className="icons"><IoFootball/></span><span>Football</span>
+                        <button onClick={() => setActiveTrendingTab('football')} className={`nav-link ${activeTrendingtab === 'football' ? 'active' : ''}`} id="lightlighttabtrend" data-bs-toggle="tab"
+                            data-bs-target="#height1trend" type="button" role="tab" aria-selected="true">
+                            <span className="icons"><IoFootball /></span><span>Football</span>
                         </button>
                         <button onClick={() => setActiveTrendingTab('tennis')} className={`nav-link ${activeTrendingtab === 'tennis' ? 'active' : ''}`} id="treading1" data-bs-toggle="tab" data-bs-target="#treand2" type="button" role="tab" aria-selected="false">
-                            <span className="icons"><IoTennisball/></span>
+                            <span className="icons"><IoTennisball /></span>
                             <span>Tennis</span></button>
-                        <button onClick={() => setActiveTrendingTab('basketball')} className={`nav-link ${activeTrendingtab === 'basketball' ? 'active' : ''}`}id="treading2" data-bs-toggle="tab" data-bs-target="#treand3" type="button" role="tab" aria-selected="false">
-                            <span className="icons"><FaBasketballBall/></span><span>Basketball</span></button>
-                       
+                        <button onClick={() => setActiveTrendingTab('basketball')} className={`nav-link ${activeTrendingtab === 'basketball' ? 'active' : ''}`} id="treading2" data-bs-toggle="tab" data-bs-target="#treand3" type="button" role="tab" aria-selected="false">
+                            <span className="icons"><FaBasketballBall /></span><span>Basketball</span></button>
+
                         <button onClick={() => setActiveTrendingTab('golf')} className={`nav-link ${activeTrendingtab === 'golf' ? 'active' : ''}`} id="treading7" data-bs-toggle="tab" data-bs-target="#treand7" type="button" role="tab" aria-selected="false">
-                            <span className="icons"><IoGolfSharp/></span><span>Golf</span></button>
-                        
+                            <span className="icons"><IoGolfSharp /></span><span>Golf</span></button>
+
                     </div>
                 </div>
                 <div className="height__table">
@@ -84,7 +87,7 @@ export default function TrendingNow() {
                                 <div className="section__head b__bottom">
                                     <div className="left__head">
                                         <span className="icons">
-                                        <IoFootball/>
+                                            <IoFootball />
                                         </span>
                                         <span>Football</span>
                                     </div>
@@ -128,7 +131,7 @@ export default function TrendingNow() {
                                             <a className="point__box bg__none" href="#0box">X</a>
                                             <a className="point__box bg__none" href="#0box">2</a>
                                         </div>
-                                        
+
                                         <div className="mart__point__two">
                                             <div className="mart__point__left">
                                                 <a className="point__box bg__none" href="#">Over</a>
@@ -148,54 +151,56 @@ export default function TrendingNow() {
                                     {gamesData.data.competitions &&
                                         gamesData.data.competitions.map((competition) =>
                                             competition.matches &&
-                                            competition.matches.map((match) => (
-                                                <>
-                                                   
-                                                  <div key={match.parent_match_id}  className="table__items b__bottom">
-                                                        <div className="t__items">
-                                                            <div className="t__items__left">
-                                                                <h6>{match.home_team}</h6>
-                                                                <span className="text">{match.away_team}</span>
-                                                                <p>
-                                                                    <a className="today" href="#">{formatDateTime(match.start_time)}</a>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div className="mart__point__items">
-                                                            <a className="twing twing__right" href="#">
-                                                                <i className="icon-twer"></i>
-                                                            </a>
-                                                            <a className={`point__box ${selectedEvents[match.parent_match_id] === 'home' ? 'pointBoxSelected' : ''}`}
-                                                                onClick={() => handleEventClick(match.parent_match_id, 'home', match.home_team, match.away_team, getOddsForHomeTeam(match))} href="#0box">{getOddsForHomeTeam(match)}</a>
-                                                            <a className={`point__box ${selectedEvents[match.parent_match_id] === 'draw' ? 'pointBoxSelected' : ''}`}
-                                                                onClick={() => handleEventClick(match.parent_match_id, 'draw', match.home_team, match.away_team, getOddsForDraw(match))} href="#0box">{getOddsForDraw(match)}</a>
-                                                            <a className={`point__box ${selectedEvents[match.parent_match_id] === 'away' ? 'pointBoxSelected' : ''}`}
-                                                                onClick={() => handleEventClick(match.parent_match_id, 'away', match.home_team, match.away_team, getOddsForAwayTeam(match))} href="#0box">{getOddsForAwayTeam(match)}</a>
-                                                        </div>
-                                                        
-                                                        <div className="mart__point__two">
-                                                            <div className="mart__point__left">
-                                                                <a className="point__box" href="URL:void(0)">
-                                                                    <FaLock />
-                                                                </a>
-                                                                <a className="point__box" href="URL:void(0)"><FaLock /></a>
-                                                            </div>
-                                                            <div className="mart__point__right">
-                                                                <a className="point__box" href="URL:void(0)"><FaLock /></a>
-                                                                <a className="point__box" href="URL:void(0)"><FaLock /></a>
-                                                                <a className="point__box bg__none" href="URL:void(0)">
-                                                                    <FaStar />
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            className="cart__point cart__point__two">
-                                                            <Link href={`/games/${match.parent_match_id}`}> <FcNext/></Link>
-                                                        </div>
-                                                    </div>
+                                            competition.matches
+                                                .filter((match) => new Date(match.start_time) > new Date(currentTime)) // Filter matches based on start time
+                                                .map((match) => (
+                                                    <>
 
-                                                </>
-                                            ))
+                                                        <div key={match.parent_match_id} className="table__items b__bottom">
+                                                            <div className="t__items">
+                                                                <div className="t__items__left">
+                                                                    <h6>{match.home_team}</h6>
+                                                                    <span className="text">{match.away_team}</span>
+                                                                    <p>
+                                                                        <a className="today" href="#">{formatDateTime(match.start_time)}</a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div className="mart__point__items">
+                                                                <a className="twing twing__right" href="#">
+                                                                    <i className="icon-twer"></i>
+                                                                </a>
+                                                                <a className={`point__box ${selectedEvents[match.parent_match_id] === 'home' ? 'pointBoxSelected' : ''}`}
+                                                                    onClick={() => handleEventClick(match.parent_match_id, 'home', match.home_team, match.away_team, getOddsForHomeTeam(match))} href="#0box">{getOddsForHomeTeam(match)}</a>
+                                                                <a className={`point__box ${selectedEvents[match.parent_match_id] === 'draw' ? 'pointBoxSelected' : ''}`}
+                                                                    onClick={() => handleEventClick(match.parent_match_id, 'draw', match.home_team, match.away_team, getOddsForDraw(match))} href="#0box">{getOddsForDraw(match)}</a>
+                                                                <a className={`point__box ${selectedEvents[match.parent_match_id] === 'away' ? 'pointBoxSelected' : ''}`}
+                                                                    onClick={() => handleEventClick(match.parent_match_id, 'away', match.home_team, match.away_team, getOddsForAwayTeam(match))} href="#0box">{getOddsForAwayTeam(match)}</a>
+                                                            </div>
+
+                                                            <div className="mart__point__two">
+                                                                <div className="mart__point__left">
+                                                                    <a className="point__box" href="URL:void(0)">
+                                                                        <FaLock />
+                                                                    </a>
+                                                                    <a className="point__box" href="URL:void(0)"><FaLock /></a>
+                                                                </div>
+                                                                <div className="mart__point__right">
+                                                                    <a className="point__box" href="URL:void(0)"><FaLock /></a>
+                                                                    <a className="point__box" href="URL:void(0)"><FaLock /></a>
+                                                                    <a className="point__box bg__none" href="URL:void(0)">
+                                                                        <FaStar />
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                className="cart__point cart__point__two">
+                                                                <Link href={`/games/${match.parent_match_id}`}> <FcNext /></Link>
+                                                            </div>
+                                                        </div>
+
+                                                    </>
+                                                ))
                                         )}
 
                                     <div className="table__footer"><a
@@ -212,7 +217,7 @@ export default function TrendingNow() {
                             role="tabpanel">
                             <div
                                 className="main__table larg__width2 treanding__table main__tabletennis">
-                                
+
                                 <div className="table__wrap">
                                     <div className="table__items b__bottom">
                                         <div className="t__items">
@@ -221,9 +226,9 @@ export default function TrendingNow() {
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                   
-                                   
+
+
+
                                 </div>
                             </div>
                         </div>
@@ -231,19 +236,19 @@ export default function TrendingNow() {
                         <div className={`tab-pane fade text-white ${activeTrendingtab === 'basketball' ? 'show active' : ''}`} id="treand3"
                             role="tabpanel" aria-labelledby="nav-home-tabpre">
                             <div className="main__table larg__width4 treanding__table main__basketballtable">
-                                
+
                                 <div className="table__wrap">
-                                    
+
                                     <div className="table__items b__bottom">
                                         <div className="t__items">
                                             <div className="t__items__left">
                                                 <h6>Unavailable at the moment</h6>
-                                                
+
                                             </div>
                                         </div>
-                                        
+
                                     </div>
-                                   
+
                                 </div>
                             </div>
                         </div>
@@ -251,23 +256,23 @@ export default function TrendingNow() {
                             role="tabpanel" aria-labelledby="nav-home-tabpre">
                             <div
                                 className="main__table larg__width6 treanding__table main__basketballtable">
-                                
-                                
+
+
                                 <div className="table__wrap">
                                     <div className="table__items b__bottom">
                                         <div className="t__items">
                                             <div className="t__items__left">
                                                 <h6>Unavailable at the moment</h6>
-                                                
+
                                             </div>
                                         </div>
-                                        
+
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
