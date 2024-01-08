@@ -3,7 +3,7 @@ const fs = require('fs').promises;
     const axios = require('axios');
 
     const dataDirectory = './app/data';
-    const dataFilePath = `${dataDirectory}/gamesDat.json`;
+    const dataFilePath = `${dataDirectory}/gamesData.json`;
 
     fs.mkdir(dataDirectory, { recursive: true })
     .then(() => console.log('Data directory created'))
